@@ -13,7 +13,7 @@ jobs:
             - run: npm test
             - run: git config user.email "dosemwegie@gmail.com"
             - run: git config user.name "David Osemwegie"
-            - run: git commit "circle ci commit"
+            - run: git commit -m 'CircleCI commit'
             - run: git push
 workflows:
   build-and-test-and-push:
