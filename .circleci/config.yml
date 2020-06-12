@@ -14,7 +14,7 @@ jobs:
             - run: touch circleci.txt
             - run: git config user.email "dosemwegie@gmail.com"
             - run: git config user.name "David Osemwegie"
-            - run: git add -a
+            - run: git add .
             - run: git commit -m 'CircleCI commit'
             - run: git push
 workflows:
