@@ -11,14 +11,13 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-            - run: touch circleci.txt
             - add_ssh_keys:
                 fingerprints:
                   - "2b:c0:d2:d8:34:af:0c:39:65:75:67:7f:0f:4a:98:15"
             - run: git config user.email "dosemwegie@gmail.com"
             - run: git config user.name "David Osemwegie"
             - run: git add .
-            - run: git commit -m 'CircleCI commit'
+            - run: git commit --amend -m "an updated commit message"
             - run: git push
 workflows:
   build-and-test-and-push:
