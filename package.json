@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node src/index.ts --extensions \".ts\""
+    "start": "babel-node src/index.ts --extensions \".ts\"",
+    "tsc": "tsc --noEmit",
+    "build": "npm run tsc && babel src -d dist --extensions \".ts\""
   },
   "repository": {
     "type": "git",
