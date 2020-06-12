@@ -1,4 +1,5 @@
 import express from "express"
+import sum from "./sum"
 const app = express()
 const port = 3000
 const sayHelloTo = (name: string): string => `Hello ${name}!`
