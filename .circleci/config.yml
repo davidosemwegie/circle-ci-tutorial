@@ -18,4 +18,4 @@ jobs:
 workflows:
   build-and-test-and-push:
     jobs:
-      - build-and-test
+      - build-and-test-and-push
